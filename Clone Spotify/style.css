@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+.playlist::-webkit-scrollbar-thumb {
+    background: rgb(70, 70, 70); 
+    opacity: 0.5;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(134, 134, 134);
+  }
+  
+nav{
+    grid-area: navegacao;
+    background-color: #000000;
+}
+
+
+main{
+    grid-area: conteudo;
+    background-color: #181818;
+}
+
+footer{
+    grid-area: rodape;
+    background-color: #121212;
+}
+
+body{
+    display: grid;
+    min-height: 100vh; 
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: 345px 1fr 100px;
+    grid-template-areas: 
+        'navegacao conteudo'
+        'navegacao conteudo'
+        'rodape rodape';  
+        overflow: hidden;
+}
+
+.navegtion{
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.logo{
+    width: 160px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icons-nav{
+    width: 30px;
+}
+.interno{
+    display: flex;
+    align-items: center;
+}
+.like-and-created{
+    margin-top: 30px;
+}
+.row{
+    border-bottom: 1px solid #808080;
+    opacity: 0.5;
+    padding: 5px;
+    margin-left: 10px;
+    width: 15rem;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+}
+
+.list-text{
+    color: #f0f0f0;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.playlist_text{
+    padding-top: 10px;
+    font-size: 14px;
+}
+.playlist{
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    height: 45%;
+}
+/*  rodape  */
+.rodape{
+        display: flex;
+        padding: 20px 10px 20px 10px;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        bottom: 0;
+}
+/* artistas e musica  */
+.musics{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.mini-imagem{
+    width: 70px;
+    height: 70px;
+}
+
+.name-music{
+    margin-left: 15px;
+    font-size: 17px;
+    overflow-x: hidden;
+    max-width: 22ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #f0f0f0;
+}
+
+.artists{
+    margin-left: 15px;
+    font-size: 13px;
+    color: gray;
+}
+
+
+.icons{
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.fav{
+    width: 20px;
+    margin-left: 10px;
+}
+/* fim dos artistas e musica */
+
+/* painel de controle da musica */
+.control-painel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next ,.previous{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.pause-button{
+    width: 45px;
+    background-color: #121212;
+    border: none;
+}
+.skip,.back{
+    width: 25px;
+    height: 25px;
+    background-color: #121212;
+    border: none;
+}
+.time-musics{
+    height: 10px;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+}
+.bottomrepeat{
+    width: 20px;
+}
+.bottomrandom{
+    width: 20px;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.begin, .end{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.min{
+    color: #f0f0f0;
+}
+/* fim painel de controle da musica */
+
+
+/* começo do painel de letras ,listas, dispositivos e volumes */
+
+.audio-painel{
+    display: flex;
+    align-items: center;
+}
+.letra,.device,.lista,.full{
+    width: 20px;
+    margin: 6px;
+    display: flex;
+}
+
+.volume-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volume{
+    width: 22px;
+    margin: 5px;
+}
+
+.volume-music{
+    height: 13px;
+    width: 120px;
+}

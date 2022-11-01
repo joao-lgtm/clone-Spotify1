@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="tag"> 
+    </main>
+    <nav class="navegtion">
+        <div class="menu">
+            <div class="nave">
+                <div>
+                    <img class="logo" src="img/Spotify_Logo_RGB_White.png"></img>
+                </div>
+                <ul>
+                    <li>
+                        <div class="interno">
+                        <img class="icons-nav" src="/img/home_FILL1_wght500_GRAD200_opsz48.svg"> <p class="list-text">Home<p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="interno">
+                            <img class="icons-nav" src="/img/search_FILL0_wght500_GRAD200_opsz48.svg"> <p class="list-text">Search<p>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="interno">
+                            <img class="icons-nav" src="/img/menu_FILL1_wght400_GRAD200_opsz48.svg"> <p class="list-text">Your Libary<p>
+                        </div>    
+                    </li>
+                </ul>
+            </div>
+            <div class="like-and-created">
+                <ul>
+                    <li>
+                        <div class="interno">
+                            <img class="icons-nav" src="/img/add_box_FILL1_wght100_GRAD200_opsz48.svg"> <p class="list-text">Create Playlist<p>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="interno">
+                        <img class="icons-nav" src="/img/favorite_FILL1_wght100_GRAD200_opsz48.svg"> <p class="list-text">Liked Songs<p>
+                        </div>   
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+            </div>
+            <div class="playlist">
+                <ul>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                    <li>
+                        <p class="playlist_text">Minha Playlist<p>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+    </nav>
+    <footer class="rodape">
+        <div class="musics">
+            <img class="mini-imagem" id="imagem" src="/img/8ba037387688a27f3856b6ea12d6f63c.jpg" alt="">
+            <div id="music-artista">
+                <p id="music" class="name-music">Distante do Seu Mundo</p>
+                <p id="artista" class="artists">Tá na Mente</p>
+            </div>
+            <div class="icons">
+               <img class="fav" src="/img/favorite_FILL0_wght500_GRAD200_opsz48.svg" alt="">
+               <img class="fav" src="/img/do_not_disturb_on_FILL0_wght500_GRAD200_opsz48.svg" alt="">
+            </div>
+        </div>
+    <div class="control-painel">
+        <div class="player">
+            <div class="bottomrandom">
+                <input class="bottomrandom" type="image" src="/img/shuffle_FILL0_wght500_GRAD200_opsz48.svg" alt="">
+            </div>
+            <div class="previous">
+                <button class="back" onclick="back_music()"><img src="/img/skip_previous_FILL1_wght700_GRAD-25_opsz20.svg"></button>
+            </div>
+            <div class="pause">
+                <button class="pause-button"  onclick="pause_play()"><img id="pause-play" class="pause" src="/img/pause_circle_FILL1_wght700_GRAD200_opsz48.svg" alt=""></button>
+            </div>
+            <div class="next">
+                <button class="skip" onclick="skip_music()"> <img src="/img/skip_next_FILL1_wght700_GRAD-25_opsz20.svg"></button>
+            </div>
+            <div class="repeat">
+                <input class="bottomrepeat" type="image" src="/img/repeat_FILL0_wght500_GRAD200_opsz48.svg" alt=""></input>
+            </div>
+        </div>
+        <div class="timer">
+            <div class="begin">
+                <p class="min">0:00</p>
+            </div>
+            <div>
+                <progress class="time-musics" value="0" max="100"></progress>
+            </div>
+            <div class="end">
+                <p class="min">3:31</p>
+            </div>
+        </div>
+    </div>
+        <div class="audio-painel">
+            <div class="icon">
+                <input class="letra" type="image" src="/img/mic_external_on_FILL1_wght400_GRAD200_opsz48.svg">
+             </div>
+             <div class="icon">
+                <input class="lista" type="image" src="/img/list_FILL1_wght400_GRAD200_opsz48.svg">
+             </div>
+             <div class="icon">
+                <input class="device" type="image" src="/img/devices_FILL1_wght400_GRAD200_opsz48.svg">
+             </div>
+             <div class="volume-control">
+                    <input class="volume" type="image" src="/img/volume_up_FILL0_wght400_GRAD200_opsz48.svg">
+                    <progress class="volume-music" value="0" max="100"></progress>
+             </div>
+             <div class="icon">
+                <input class="full" type="image" src="/img/open_in_full_FILL0_wght500_GRAD200_opsz48.svg">
+             </div>
+        </div>  
+    </footer>
+</body>
+<script src="functions.js"></script>
+</html>
